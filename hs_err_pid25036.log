@@ -1,0 +1,44 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007fff8f520e63, pid=25036, tid=22216
+#
+# JRE version: Java(TM) SE Runtime Environment (20.0.2+9) (build 20.0.2+9-78)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (20.0.2+9-78, mixed mode, emulated-client, sharing, tiered, compressed oops, compressed class ptrs, g1 gc, windows-amd64)
+# Problematic frame:
+# V  [jvm.dll+0x3e0e63]
+#
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   https://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -XX:TieredStopAtLevel=1 -Dspring.output.ansi.enabled=always -Dcom.sun.management.jmxremote -Dspring.jmx.enabled=true -Dspring.liveBeansView.mbeanDomain -Dspring.application.admin.enabled=true -Dmanagement.endpoints.jmx.exposure.include=* -javaagent:D:\IntelliJ IDEA 2024.1.1\lib\idea_rt.jar=59436:D:\IntelliJ IDEA 2024.1.1\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 cn.zwz.ZwzApplication
+
+Host: AMD Ryzen 7 5800H with Radeon Graphics         , 16 cores, 15G,  Windows 11 , 64 bit Build 26100 (10.0.26100.3775)
+Time: Tue Apr 29 16:21:03 2025  Windows 11 , 64 bit Build 26100 (10.0.26100.3775) elapsed time: 848.742174 seconds (0d 0h 14m 8s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000028a53213310):  JavaThread "redisson-netty-2-30" [_thread_in_vm, id=22216, stack(0x000000923c200000,0x000000923c300000)]
+
+Stack: [0x000000923c200000,0x000000923c300000],  sp=0x000000923c2f83a0,  free space=992k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x3e0e63]
+V  [jvm.dll+0x6bc182]
+V  [jvm.dll+0x3e1a6b]
+V  [jvm.dll+0x3e1c38]
+V  [jvm.dll+0x7c3a21]
+V  [jvm.dll+0x7c4a0f]
+V  [jvm.dll+0x7c4fbf]
+V  [jvm.dll+0x7c4c68]
+V  [jvm.dll+0x2705bb]
+V  [jvm.dll+0x2707df]
+V  [jvm.dll+0x5be3f8]
+V  [jvm.dll+0x5c1357]
+V  [jvm.dll+0x72193e]
+V  [jvm.dll+0x724f6e]
+V  [jvm.dll+0x7249cb]
